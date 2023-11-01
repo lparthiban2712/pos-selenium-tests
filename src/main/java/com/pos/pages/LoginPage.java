@@ -6,7 +6,7 @@ import com.framework.testng.api.base.ProjectSpecificMethods;
 public class LoginPage  extends ProjectSpecificMethods{
 
 	public LoginPage enterUserName(String userName) {
-		clearAndType(locateElement(Locators.NAME, "user-name"), userName);
+		clearAndType(locateElement(Locators.NAME, "username"), userName);
 		reportStep(userName+" username is entered successfully", "pass");
 		return this;
 	}
